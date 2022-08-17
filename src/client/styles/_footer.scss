@@ -1,0 +1,39 @@
+#app-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 9vh;
+    background-color: white;
+    box-shadow: 0 -10px 10px lightgrey;
+}
+
+.footer-nav {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.footer-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-icon {
+    height: 100%;
+    margin-top: 18px;
+}
+
+.footer-divider {
+    border-right: solid 1px;
+    border-color: $shade-complementary-color;
+}

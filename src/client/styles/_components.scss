@@ -1,0 +1,76 @@
+.rounded-btn-animated {
+    border-style: none;
+    background-color: $primary-color;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    width: 150px;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: #000;
+    }
+}
+
+#btn-get-historical{
+    border-style: none;
+    background-color: $secondary-color;
+    color: #000000;
+    padding: 5px;
+    border-radius: 20px;
+    width: 150px;
+    justify-self: center;
+
+    &:hover {
+        background-color: $shade-primary-color;
+        color: #fff;
+    }
+}
+
+.remove-trip{
+    border-style: none;
+    background-color: $primary-color;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+    width: 150px;
+    align-self: center;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: #000;
+    }
+}
+
+.travel-img{
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+    margin: 0;
+    padding: 0;
+    justify-self: start;
+}
+
+.icon-travel-info {
+    display: block;
+    width: 5px;
+    font-size: $font-app;
+    color: $shade-secondary-color;
+}
+
+.icon-travel-weather {
+    display: block;
+    width: 5px;
+    font-size: $font-app;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.footer-link {
+    font-size: 30px;
+    border-style: none;
+    background-color: $secondary-color;
+    color: $shade-secondary-color;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}

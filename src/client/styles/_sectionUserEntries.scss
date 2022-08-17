@@ -1,0 +1,64 @@
+#user-entries{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.holder-form{
+    height: 145px;
+    width: 300px;
+    padding: 25px 20px;
+    font: $font-app;
+    font-weight: 400;
+    background-color: $complementary-color;
+    border-radius: 10px;
+    display: grid;
+    row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 50px 0 50px 0;
+}
+
+.label-place{
+    margin-right: 5px;
+    line-height: 25px;
+}
+
+.label-date{
+    margin-right: 5px;
+    line-height: 25px;
+}
+
+#date{
+    width: 165px;
+}
+
+#place{
+    width: 165px;
+    height: 26px;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#generate{
+    margin-top: 5px;
+}
+
+@media (max-width: 340px) {
+    .holder-form {
+        width: auto;
+        height: auto;
+        padding: 25px 13px;
+    }
+}
+
+@media (max-width: 275px){
+    .input{
+        flex-direction: column;
+    }
+}

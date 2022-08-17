@@ -1,0 +1,122 @@
+#results{
+    display: grid;
+    grid-template-columns: 95%;
+    row-gap: 25px;
+    justify-content: center;
+    justify-items: center;
+    font: $font-app;
+}
+
+.trip-holder{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 10px;
+    max-width: 290px;
+    background-color: $complementary-color;
+    border-radius: 50px 50px 50px 50px;
+    padding-bottom: 10px;
+}
+
+.info-holder {
+    padding: 10px;
+    width: 100%;
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-header {
+    display: grid;
+    row-gap: 5px;
+}
+
+.travel-data {
+    display: grid;
+    grid-template-columns: 7% 93%;
+    column-gap: 5px;
+}
+
+.travel-summary-info {
+    font-weight: bold;
+    color: $shade-secondary-color;
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 5px;
+    align-items: center;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 10px;
+    padding: 3px;
+    width: 100%;
+    max-width: 250px;
+    justify-self: center;
+}
+
+.counter-icon {
+    font-size: 28px;
+    padding: 7px;
+}
+
+.result-body {
+    padding: 10px 0 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 10px;
+}
+
+.weather-holder {
+    width: 100%;
+}
+
+.weather-description {
+    display: grid;
+    grid-template-columns: 7% 93%;
+    column-gap: 5px;
+    margin-bottom: 15px;
+}
+
+.result-subtitle {
+    text-transform: uppercase;
+    justify-self: center;
+    padding: 15px 0;
+    font-weight: bold;
+    color: $shade-secondary-color;
+    text-align: center;
+}
+
+.past-years-holder{
+    display: grid;
+    row-gap: 5px;
+}
+
+.weather-past-years {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    column-gap: 5px;
+    margin-bottom: 15px;
+    background-color: $secondary-color;
+    color: #000000;
+    padding: 7px;
+    border-radius: 10px;
+    width: 125px;
+    justify-self: end;
+
+}
+
+@media (min-width: 500px) {
+    #app-header {
+        padding: 15px 45px;
+    }
+}
+
+@media (max-width: 295px) {
+    .trip-holder {
+        width: auto;
+    }
+}

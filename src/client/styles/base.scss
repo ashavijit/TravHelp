@@ -1,0 +1,30 @@
+@import '~flatpickr/dist/flatpickr'; //import Flatpickr date picker
+@import '~@fortawesome/fontawesome-free/css/all.css'; //import Font Awesome Icons
+//import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Ranchers&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import './typography';
+@import './themeColors';
+@import './components';
+@import './header';
+@import './mainSection';
+@import './sectionUserEntries';
+@import './sectionResults';
+@import './footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    margin: auto;
+}

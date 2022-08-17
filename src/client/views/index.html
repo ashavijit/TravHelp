@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="This is a travel app to check how the weather will be at the destination on the planned dates">
+        <meta name="keywords" content="travel app, weather forecast, how is the weather in, trip planner">
+        <meta name="author" content="Janaina MJ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TravHelp- Travel App</title>
+    </head>
+    <body>
+        <header id="app-header">
+            <div class="div-logo">
+                <i class="logo app-icon fas fa-map-marked-alt"></i>
+                <p class="logo app-name">GOT a PLAN</p>
+            </div>
+            <div class="app-slogan">
+                <p>Let's draft the next trip <i class="logo slogan-icon fas fa-route"></i></p>
+            </div>
+        </header>
+        
+        <main id="app-main">
+
+            <section class="container" id="user-entries">
+                <form class="holder-form">
+                    <div class="input">
+                        <label for="place" class="label-place">My trip to:</label>
+                        <input type="text" id="place" placeholder="Enter location here">
+                    </div>
+                    <div class="input">
+                        <label for="date" class="label-date">Departing:</label>
+                        <input type="text" name="date" id="date" class="flatpickr js-flatpickr-dateTime" placeholder="YYYY-MM-DD">
+                    </div>
+                    <button id="generate" class="rounded-btn-animated" type="submit">Generate</button>
+                </form>
+            </section>
+
+            <section class="container" id="results">
+            </section>
+          
+        </main>
+        <footer id="app-footer">
+            <nav class="footer-nav">
+                <ul class="footer-menu">
+                    <li class="footer-btn footer-divider">
+                        <a href="#app-main" class="footer-link"><i class="footer-icon fas fa-search-location"></i></a>
+                    </li>
+                    <li class="footer-btn">
+                        <a href="#results" class="footer-link"><i class="footer-icon fas fa-map-marked"></i></a>
+                    </li>
+                </ul>
+            </nav>>
+        </footer>
+        <script>
+            //Check if browser support service workers
+            if('serviceWorker' in navigator){
+
+                //use Window Load event to keep page loading
+                window.addEventListener('load', ()=>{
+
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
+    </body>
+</html>

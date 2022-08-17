@@ -1,0 +1,17 @@
+#app-main {
+    margin-top: 16vh;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 190px 1fr;
+    row-gap: 20px;
+    height: 100%;
+    overflow: visible;
+    padding: 5px 10px;
+}
+
+@media (min-width: 295px) {
+    #app-main {
+        padding: 5px 0;
+    }
+}
